@@ -22,4 +22,9 @@ public class Chasis {
     public void setMaterial(MaterialChasis material) {
         this.material = material;
     }
+
+    @Override
+    public String toString(){
+        return "Chasis{peso= "+this.peso+", MaterialChasis= "+this.material+"}";
+    }
 }

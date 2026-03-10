@@ -14,4 +14,9 @@ public class Fabrica {
     public List<Planta> getPlantas() {
         return plantas;
     }
+
+    @Override
+    public String toString() {
+        return "Fabrica{plantas= "+this.plantas+"}";
+    }
 }

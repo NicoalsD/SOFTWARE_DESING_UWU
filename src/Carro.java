@@ -32,4 +32,9 @@ public class Carro {
     public void setLlanta(TipoLlanta llanta) {
         this.llanta = llanta;
     }
+
+    @Override
+    public String toString() {
+        return "Carro{color= "+this.color+", MaterialChasis= "+this.chasis+", TipoLLanta= "+this.llanta+"}";
+    };
 }

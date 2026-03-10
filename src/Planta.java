@@ -32,4 +32,9 @@ public class Planta {
     public void setChasis(MaterialChasis chasis) {
         this.chasis = chasis;
     }
+
+    @Override
+    public String toString() {
+        return "Planta{TipoLlanta= "+this.llanta+", MaterialChasis= "+this.chasis+", colores= "+this.color+"}";
+    }
 }

@@ -25,9 +25,6 @@ public class Llanta {
 
     @Override
     public String toString() {
-        return "Llanta{" +
-                "tamaño=" + tamaño +
-                ", tipoLlanta=" + tipoLlanta +
-                '}';
+        return "Llanta{tamaño= "+this.tamaño+", tipoLlanta= "+this.tipoLlanta+"}";
     }
 }
