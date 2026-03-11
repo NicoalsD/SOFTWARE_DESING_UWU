@@ -16,13 +16,13 @@ public class Planta {
         this.colores = colores;
     }
 
-    public Carro fabricar(String colorSolicitado) {
+    public Carro fabricar(String color) {
         List<Llanta> nuevasLlantas = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
             nuevasLlantas.add(new Llanta(this.tamañoLlanta, this.tipoLlanta));
         }
         Chasis nuevoChasis = new Chasis(this.pesoChasis, this.materialChasis);
-        String colorCarro = this.colores.contains(colorSolicitado) ? colorSolicitado : "Color no disponible";
+        String colorCarro = this.colores.contains(color) ? color : "Color no disponible";
         return new Carro(colorCarro, nuevoChasis, nuevasLlantas);
     }
 
