@@ -1,9 +1,9 @@
 public class Carro {
     private Colores color;
-    private MaterialChasis chasis;
-    private TipoLlanta llanta;
+    private Chasis chasis;
+    private Llanta llanta;
 
-    public Carro(Colores color, MaterialChasis chasis, TipoLlanta llanta) {
+    public Carro(Colores color, Chasis chasis, Llanta llanta) {
         this.color = color;
         this.chasis = chasis;
         this.llanta = llanta;
@@ -13,28 +13,28 @@ public class Carro {
         return this.color;
     }
 
-    public  void setColor(Colores color) {
+    public void setColor(Colores color) {
         this.color = color;
     }
 
-    public MaterialChasis getChasis() {
+    public Chasis getChasis() {
         return this.chasis;
     }
 
-    public void setChasis(MaterialChasis chasis) {
+    public void setChasis(Chasis chasis) {
         this.chasis = chasis;
     }
 
-    public TipoLlanta getLlanta() {
+    public Llanta getLlanta() {
         return this.llanta;
     }
 
-    public void setLlanta(TipoLlanta llanta) {
+    public void setLlanta(Llanta llanta) {
         this.llanta = llanta;
     }
 
     @Override
     public String toString() {
-        return "Carro{color= "+this.color+", MaterialChasis= "+this.chasis+", TipoLLanta= "+this.llanta+"}";
-    };
+        return "Carro{color= "+this.color+", chasis= "+this.chasis+", llanta= "+this.llanta+"}";
+    }
 }
