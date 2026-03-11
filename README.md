@@ -23,6 +23,7 @@ Para cada chasis se debe considerar:
 
 El material del chasis puede ser:
 
+
 - **Aluminio**
 - **Acero**
 
@@ -53,3 +54,5 @@ Se debe implementar el siguiente escenario:
 - Crear **dos plantas**.
 - Cada planta debe **fabricar 100 carros**.
 - El programa debe **mostrar en pantalla la información de cada nuevo carro fabricado**.
+
+<img width="868" height="687" alt="diagrama_clases_FabricaCarros" src="https://github.com/user-attachments/assets/c534f653-e3d8-4879-b115-e32b0c0b1c52" />
