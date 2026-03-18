@@ -44,7 +44,7 @@ public class Circle {
 
     @Override
     public String toString() {
-        return "Datos del Circulo, tiene un radio de: " + this.radius + " y tiene un area de: " + this.getArea() + ". El circulo tiene un color " + this.color;
+        return "Datos del Circulo: tiene un radio de: " + getRadius() + " y tiene un area de: " + getArea() + ". El circulo tiene un color " + getColor();
     }
 
     

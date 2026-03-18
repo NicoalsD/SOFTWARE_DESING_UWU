@@ -39,10 +39,6 @@ public class Cylinder extends Circle {
 
     @Override
     public String toString() {
-        return "Cylinder{" +
-                "radius=" + getRadius() +
-                ", height=" + height +
-                ", color='" + getColor() + '\'' +
-                '}';
+        return super.toString() + " El cilindro tiene un alto de: " + getHeight() + " y un volumen de: " + getVolume();
     }
 }
