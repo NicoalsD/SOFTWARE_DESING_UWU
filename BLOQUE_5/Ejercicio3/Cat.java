@@ -6,6 +6,11 @@ public class Cat extends Mammal {
         super(name);
     }
 
+    public Cat(String name, Raza raza) {
+        super(name, raza);
+    }
+
+
     public void greets() {
         System.out.println("Meow");
     }

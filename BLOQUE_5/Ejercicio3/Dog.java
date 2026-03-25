@@ -14,6 +14,10 @@ public class Dog extends Mammal {
         System.out.println("Auuuuuuu");
     }
 
+    public Dog(String name, Raza raza) {
+        super(name, raza);
+    }
+
     @Override
     public String toString() {
         return "Dog[" + super.toString() + "]";
