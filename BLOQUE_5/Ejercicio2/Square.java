@@ -14,6 +14,11 @@ public class Square extends Rectangle {
         super(side, side, color, filled);
     }
 
+    @Override
+    public void mover() {
+        System.out.println("El cuadrado se movió");
+    }
+
     public double getSide() {
         return getWidth();
     }

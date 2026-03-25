@@ -1,25 +1,18 @@
 package BLOQUE_5.Ejercicio2;
 
 public class Shape {
-    private String color;
     private boolean filled;
 
     public Shape() {
-        this.color = "red";
         this.filled = true;
     }
 
     public Shape(String color, boolean filled) {
-        this.color = color;
         this.filled = filled;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
+    public void mover() {
+        System.out.println("La figura se movió");
     }
 
     public boolean isFilled() {
@@ -32,6 +25,6 @@ public class Shape {
 
     @Override
     public String toString() {
-        return "Shape[color=" + getColor() + ", filled=" + isFilled() + "]";
+        return "Shape[filled=" + isFilled() + "]";
     }
 }

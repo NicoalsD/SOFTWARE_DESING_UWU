@@ -20,6 +20,11 @@ public class Rectangle extends Shape {
         this.length = length;
     }
 
+    @Override
+    public void mover() {
+        System.out.println("El rectangulo se movió");
+    }
+
     public double getWidth() {
         return width;
     }
