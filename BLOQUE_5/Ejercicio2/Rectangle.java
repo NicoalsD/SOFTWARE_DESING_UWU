@@ -46,8 +46,8 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        return "Rectangle[width=" + width
-                + ", length=" + length
+        return "Rectangle[width=" + getWidth()
+                + ", length=" + getLength()
                 + ", " + super.toString() + "]";
     }
 }
