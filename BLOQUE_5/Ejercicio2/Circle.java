@@ -16,6 +16,11 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
+    @Override
+    public void mover() {
+        System.out.println("El circulo se movió");
+    }
+    
     public double getRadius() {
         return radius;
     }

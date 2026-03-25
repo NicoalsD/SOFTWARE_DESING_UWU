@@ -1,20 +1,20 @@
 package ProjectCylinder;
-
+// el color sea una enumeración
 public class Circle {
     private double radius;
-    private String color;
+    private Color color;
 
     // Constructores
     public Circle() {
         this.radius = 0;
-        this.color = "red";
+        this.color = Color.ROJO;
     }
 
     public Circle(double radius) {
         this.radius = radius;
     }
 
-    public Circle(double radius, String color) {
+    public Circle(double radius, Color color) {
         this.radius = radius;
         this.color = color;
     }
@@ -30,11 +30,11 @@ public class Circle {
     }
     
     //Color
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 

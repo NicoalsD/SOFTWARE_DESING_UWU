@@ -7,7 +7,7 @@ public class Main {
         System.out.println(miCirculo);
 
         // Creacíón de un cilindro
-        Cylinder miCilindro = new Cylinder(10, 20, "Violeta");
+        Cylinder miCilindro = new Cylinder(10, 20, Color.AMARILLO);
         System.out.println(miCilindro);
     }
 }
