@@ -22,5 +22,8 @@ public class Main{
         System.out.println("cual es el numero de paginas del libro?");
         numeroPaginas = input.nextInt();
 
+        Libro miLibro=new Libro(titulo,precio,anioPublicacion,numeroPaginas);
+        System.out.println(miLibro);
+
     }
 }
