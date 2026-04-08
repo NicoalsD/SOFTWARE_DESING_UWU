@@ -1,12 +1,14 @@
 package BLOQUE_5.Ejercicio1;
 
+import java.time.LocalDate;
+
 public class Student extends Person {
     private String program;
     private int year;
     private double fee;
 
-    public Student(String name, String address, String program, int year, double fee) {
-        super(name, address);
+    public Student(String name, String address, String program, LocalDate dateOfBirth, int year, double fee) {
+        super(name, address, dateOfBirth);
         this.program = program;
         this.year = year;
         this.fee = fee;

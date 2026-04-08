@@ -1,11 +1,13 @@
 package BLOQUE_5.Ejercicio1;
 
+import java.time.LocalDate;
+
 public class Staff extends Person {
     private String school;
     private double pay;
 
-    public Staff(String name, String address, String school, double pay) {
-        super(name, address);
+    public Staff(String name, String address, LocalDate dateOfBirth, String school, double pay) {
+        super(name, address, dateOfBirth);
         this.school = school;
         this.pay = pay;
     }
