@@ -13,7 +13,7 @@ public class Disco extends Publicacion {
     }
 
     public Disco() {
-        this.duracionMinutos = 0:
+        this.duracionMinutos = 0;
     }
 
     public float getDuracionMinutos() {
