@@ -1,0 +1,62 @@
+@startuml
+hide empty members
+skinparam classAttributeIconSize 0
+
+package FabricaCarros {
+  class Fabrica {
+    - plantas: List<Planta>
+    + Fabrica(plantas: List<Planta>)
+    + getPlantas(): List<Planta>
+    + setPlantas(plantas: List<Planta>): void
+  }
+
+  class Planta {
+    - tamanoLlanta: float
+    - tipoLlanta: TipoLlanta
+    - pesoChasis: float
+    - materialChasis: MaterialChasis
+    - colores: ArrayList<String>
+    + Planta(tamanoLlanta: float, tipoLlanta: TipoLlanta, pesoChasis: float, materialChasis: MaterialChasis, colores: ArrayList<String>)
+    + fabricar(color: String): Carro
+  }
+
+  class Carro {
+    - color: String
+    - chasis: Chasis
+    - llantas: List<Llanta>
+    + Carro(color: String, chasis: Chasis, llantas: List<Llanta>)
+  }
+
+  class Chasis {
+    - peso: float
+    - material: MaterialChasis
+    + Chasis(peso: float, material: MaterialChasis)
+  }
+
+  class Llanta {
+    - tamano: float
+    - tipoLlanta: TipoLlanta
+    + Llanta(tamano: float, tipoLlanta: TipoLlanta)
+  }
+
+  enum MaterialChasis {
+    ALUMINIO
+    ACERO
+  }
+
+  enum TipoLlanta {
+    RADIAL
+    ALTO_DESEMPENO
+    NIEVE
+  }
+}
+
+Fabrica "1" o-- "*" Planta
+Planta "1" --> "*" Carro : fabrica
+Carro "1" *-- "1" Chasis
+Carro "1" *-- "4" Llanta
+Planta ..> TipoLlanta
+Planta ..> MaterialChasis
+Chasis ..> MaterialChasis
+Llanta ..> TipoLlanta
+@enduml
